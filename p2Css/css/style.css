@@ -1,0 +1,133 @@
+* {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333333;
+    height: 7em;
+}
+
+nav {
+    margin: .3em;
+    padding: .5em;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    vertical-align: bottom;
+  }
+
+  nav ul li {
+      color: white;
+      float: right;
+      font-weight: 700;
+      display: inline;
+      vertical-align: bottom;
+      padding: .5em;
+      margin: 1em;
+  }
+
+.logo {
+    float: left;
+    max-width: 5em;
+    max-height: 5em;
+    padding: .2em;
+    margin: .5em;
+    vertical-align: middle;
+}
+
+#search-icon {
+    float: right;
+    width: 1em;
+    height: auto;
+}
+
+#contact-us {
+    background-color:greenyellow;
+    padding: .7em;
+    color: #333333;
+}
+
+section {
+    float:left;
+    vertical-align: top;
+    display: inline-block;
+    max-width: 70%;
+}
+
+section ul {
+    text-decoration-style: none;
+    display: inline;
+}
+
+#profile-pic {
+    float: left;
+    width: 5em;
+    height: auto;
+    margin: 1em;
+    border-left-color: limegreen;
+    border-width: 5px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-collapse: separate;
+  }
+
+  aside {
+    float: right;
+    vertical-align: middle;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 2em 2em 0em 1em;
+    max-width: 20%;
+  }
+
+  aside h4 {
+    text-align: left;
+}
+
+form {
+    background-color: rgb(15, 111, 170);    
+}
+
+label {
+    font-size: 12px;
+    color: white;
+    padding: 1em;
+
+}
+
+  input[type=text], select {
+    width: 90%;
+    padding: 1em;
+    margin: 1em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 90%;
+    background-color:green;
+    color: white;
+    font-size: 18px;
+    font-weight: 700px;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: greenyellow;
+    color: green;
+    font-weight: 700px;
+    font-size: 18px;
+  }
