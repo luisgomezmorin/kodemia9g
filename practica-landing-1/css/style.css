@@ -1,0 +1,67 @@
+* {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.menu-wrapper { /* es el contenedor para este ejercicio*/
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* NAVIGATION BAR */
+
+.menu {
+    list-style-type: none;
+    width: 200px;
+    height: 40%;
+  }
+
+.menu.list {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    flow-direction: row-reverse;
+    align-content: flex-end;
+}
+
+.menu.logo {
+    width: 75px;
+    height: auto;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu.search-icon {
+    width: 20px;
+    height: auto;
+}
+
+#contact-us {
+    background-color:greenyellow;
+    color: #333333;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}

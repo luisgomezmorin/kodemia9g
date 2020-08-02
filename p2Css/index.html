@@ -8,21 +8,19 @@
     <title>Página Practica CSS</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="https://cdn.freebiesupply.com/logos/large/2x/visual-studio-code-logo-black-and-white.png">
-            <ul>
-                <li><img id="search-icon" src="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png"></li>
-                <li id="contact-us">Contact Us</li>
-                <li>Blog</li>
-                <li style="color:greenyellow">Resource</li>
-                <li>Service</li>
-                <li>Approach</li>
-                <li>Culture</li>
-                <li>Results</li>
-            </ul>
-        </nav>
-    </header>
+    <div class="menu-wrapper d-flex">
+        <img class="menu logo" src="https://cdn.freebiesupply.com/logos/large/2x/visual-studio-code-logo-black-and-white.png">
+        <div class="menu-wrapper d-flex end"></div>
+            <div class="menu list end">Results</div>
+            <div class="menu list end">Approach</div>
+            <div class="menu list end">Culture</div>
+            <div class="menu list end">Service</div>
+            <div class="menu list end" style="color:greenyellow">Resource</div>
+            <div class="menu list end">Blog</div>
+            <div class="menu list end" id="contact-us">Contact Us</div>
+            <div class="menu list end"><img class="menu search-icon" src="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png">
+        </div>
+    </div>
 
     <section>
         <h1>Your Content Marketing Strategy Template And Checklist</h1>
