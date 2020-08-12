@@ -1,0 +1,113 @@
+/*Estilos mobile*/
+.square{
+    width:100px;
+    height:100px;
+    background-color:peru;
+    transition:all 500ms ease;
+}
+section{
+    background-color:#acacac;
+    padding:15px;
+    color:#333;
+}
+aside{
+    background-color:slategray;
+    color:white;
+    padding:15px;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+ul li{
+    border-bottom:1px solid black;
+}
+ul li:last-of-type{
+    border-bottom:none;
+}
+ul li:first-of-type{
+    background:white;
+    color:black;
+}
+ul li:nth-of-type(4){
+    text-transform: uppercase;
+}
+ul li:nth-of-type(odd){
+    border:1px solid red;
+}
+ul li:nth-of-type(even){
+    border: 1px solid blue;
+}
+ul li:not(.some-class){
+    padding:15px;
+}
+label + input{
+    height:30px;
+    border-radius:5px;
+}
+label ~ input{
+    background:skyblue;
+}
+p ~ span{
+    font-size:30px;
+}
+/*Estilos tablet*/
+input[type="checkbox"]{
+    widows: 50px;
+    height:50px;
+}
+/*input[type="checkbox"]:checked{
+    display:block;
+    margin-left: auto;
+}*/
+input[type="checkbox"]:checked ~ .checkbox-brother{
+    /*border-radius:50%;*/
+    /*height:0;*/
+}
+input[type="checkbox"]:checked ~ .checkbox-brother::before{
+    content:"checkbox seleccionado"
+}
+.checkbox-brother{
+    width:100px;
+    height:100px;
+    background:pink;
+    transition:all 1s ease;
+    overflow:hidden;
+}
+.checkbox-brother::before{
+    content:"";
+    width:50px;
+    height:10px;
+    background:blue;
+    display:block;
+}
+.checkbox-brother::after{
+    content:"";
+    width:50px;
+    height:10px;
+    background:violet;
+    display:block;
+}
+@media only screen and ( min-width:768px ){ /*breakpoint tablet*/
+    .square{
+        background-color:slategray;
+        transform:scale(.5)
+    }
+}
+/*estilos desktop*/
+@media only screen and ( min-width:1024px ){
+    .square{
+        background-color:purple;
+        border-radius: 50%;
+        transform:scale(.25)
+    }
+    main{
+        display:flex;
+    }
+    section{
+        width:70%;
+    }
+    aside{
+        width:30%;
+    }
+}

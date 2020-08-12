@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+section {
+    display: flex;
+    background-color: lightcoral;
+    padding: 15px;
+    color: darkred;
+    flex-wrap: wrap;
+}
+
+aside {
+    display: flex;
+    background-color: darkseagreen;
+    color: green;
+    padding: 15px
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+}
+
+/*
+NEGACIONES 
+Para negar o hacer que haya una excepcion de 'algo' se escribe:
+
+clase subclase:not(.alguna-clase){}
+*/
+
+/*
+ADYACENTES (LOS QUE SIGUEN)
+para seleccionar elementos después de uno y compartir el mismo estilo se usa +:
+
+label + input {}
+*/
+
+/*
+SUBSECUENTES
+selecciona elementos dentro del elemento y se usa ~ (option+Ñ)
+*/

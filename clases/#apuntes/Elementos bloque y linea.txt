@@ -1,0 +1,56 @@
+    /*Elementos bloque*/
+    <section>esta es la sección de artículos
+            <br>
+            <article>
+            <p>esto es un artículo</p>
+            </article>
+            <article>
+            <p>esto es otro artículo</p>
+            </article>
+            <article>
+            <p>éste es un artículo más</p>
+            </article>
+            <br>
+    </section>
+
+    <aside></aside>
+
+    
+    /*Elementos de línea*/
+    
+    /* celdas para ingresar datos*/
+    <input type="text">
+    <input type="number">
+    <input type="date">
+    <input type="email" placeholder="email">
+    <input type="url" placeholder="página web">
+    
+    /* crea un bloque pequeño */
+    <span></span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>    
+    
+    <br>
+    <footer>pie de página</footer>
+    
+    /*Tipos de elementos:
+    Los elementos de la sección body son elementos de bloque.
+    Apilados en una sola columna
+
+    Existen también los elementos de línea que se van
+    anidando dentro de la misma línea que se escriben.
+    Las más comunes son:*/
+    
+    Celdas para ingresar datos*/
+    <input type="text">
+    <input type="number">
+    <input type="date">
+    <input type="email" placeholder="email">
+    <input type="url" placeholder="página web">
+    
+    /* Span para crear bloques pequeños */
+    <span></span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>    

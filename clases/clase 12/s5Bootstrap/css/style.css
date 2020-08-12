@@ -1,0 +1,19 @@
+.half-height {
+    height: 50vh;
+}
+
+.background-1 {
+    background-image:url("https://picsum.photos/id/237/1024");
+    background-size: cover;
+    background-position:center;
+}
+
+.background-2 {
+    background-image:url("https://picsum.photos/id/215/1024");
+    background-size: cover;
+    background-position:center;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px white;
+}

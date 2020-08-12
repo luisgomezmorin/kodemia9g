@@ -1,0 +1,29 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease;
+}
+
+header {
+    background-color: cyan;
+}
+
+nav {
+    background-color: magenta;
+}
+
+section {
+    background:hsl(208, 56%, 44%);
+}
+
+article {
+    background-color: hsl(18, 66%, 86%);
+    height:50px;
+}
+
+aside {
+    background-color: hsl(14, 93%, 70%);
+}
+
+footer {
+    background-color: violet;
+}

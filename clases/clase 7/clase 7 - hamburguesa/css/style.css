@@ -1,0 +1,85 @@
+/*
+ATRIBUTO FOR
+
+Si le quiero dar click a algo con un checkbox,
+el usuario pueda hacerlo desde la etiqueta
+y no necesariamente dando click en el checkbox
+*/ 
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hamburger-wrapper {
+    /* esto va a ser el cuadro que va a envolver el menu hamburguesa */
+    width: 100px;
+    height: 100px;
+    border: 2px solid darkgray;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hamburger-icon {
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    border-radius: 3px;
+    width: 80px;
+    height: 15px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    /* el box shadow me ayuda a "reflejar" el elemento.
+    Se define en X / en Y / difuminado / esparcimiento / y color.
+    (x y difu espar color) */
+    box-shadow: 0px 22px 0px 0px darkgray, 0px -22px 0px 0px darkgray;
+}
+
+.hamburger-wrapper + input {
+    display: none;
+}
+
+.hamburger-label:hover{
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    max-height: 0px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-wrapper ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-wrapper ul li {
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-wrapper ul li:nth-of-type(odd){
+    background-color: lightsteelblue;
+}
+
+.nav-wrapper ul li:nth-of-type(even){
+    background-color: lightgray;
+}
+
+
+/*
+EL CONCPETO DE LOS ADYACENTES:
+lo que significa esto es similar a hacer un condicional de pseudocodigo que dice:
+"si el elemento identificado ha sido seleccionado, entonces, el elemento adyacente será cambiado a..."
+*/
+
+#hamburger-input:checked + .nav-wrapper { /* lo que significa esto es hacer un condicional que dice: */
+    max-height: 1000px;  /* se va a mostrar hasta que llegue a un maximo de 1000px */
+}

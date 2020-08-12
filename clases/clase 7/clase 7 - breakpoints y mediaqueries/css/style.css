@@ -1,0 +1,102 @@
+/* MOBILE FIRST
+Definamos el estilo para mobile */
+
+.square-wrapper {
+    display: flex;
+    height:600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square-peru {
+    width:100px;
+    height:100px;
+    background-color:peru;
+    transition: all .3s ease;
+    /* all: para todos los objetos en la clase
+       tiempo: en segundos o milisegundos
+       ease: para que tenga una transición que fluye
+    */
+}
+
+.square-red {
+    width:100px;
+    height:100px;
+    background-color:tomato;
+    transition: all .3s ease;
+}
+
+.square-blue {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    transition: all .3s ease;
+}
+
+/* Estilo para tablet 
+@media va a ser instrucción para un media query
+pediremos que sea sólo para lo visible en pantalla
+y que tenga su breakpoint con el mínimo para una tablet
+que es 768px 
+
+@media only screen and (min-width:768px) {
+}
+
+/* Si quiero definir el rango
+debo poner del rango base al rango tope 
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+}    
+*/
+
+@media only screen and (min-width:768px) {
+    .square-wrapper {
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .square-peru {
+        background-color:green;
+        border-radius: 50%;
+    }
+
+    .square-red {
+        background-color:cyan;
+        border-radius: 50%;
+    }
+
+    .square-blue {
+        background-color:magenta;
+        border-radius: 50%;
+    }
+}
+
+/* NOTA
+Usando inspect en Chrome,
+si aumentamos o disminuimos el tamaño
+del viewport, veremos el indicador y
+al llegar al límite, cambiara el selector
+de forma/tamaño/etc
+*/
+
+/*
+si quiero agregar una modificación para
+cuando la dimensión de la pantalla es desk
+y quiero que el cuadrado se transforme a
+un circulo
+*/
+
+@media only screen and (min-width:1200px) {
+    .square-wrapper {
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    
+    .square-red {
+        display: none;
+    }
+}

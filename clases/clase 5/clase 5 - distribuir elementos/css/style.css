@@ -1,0 +1,117 @@
+/* CLASES
+
+Empezamos con la clase wrapper
+el wrapper va a engrapar el espacio contenido dentro de la clase
+*/
+
+/* DIMENSIONES
+ejemplo valores: width: 15vw / height: 
+vw = viewport width: asigna 100% del ancho de viewport que es el ancho de la pantalla.
+vh = viewport height: asigna 100% del alto de viewport que es el alto de la pantalla.
+*/
+
+/*
+
+Se pueden hacer calculos en css-3
+usando calc(operacion aritmetica)
+
+la opción AUTO hace el cálculo para asignar
+correctamente las limitaciones/dimensione/etc
+el selector a modificar.
+
+EN LA ALINEACION DE MÁRGENES, AUTO SOLO SIRVE
+PARA LOS MÁRGENES LATERALES
+*/
+
+
+.square-wrapper { /* es el contenedor para este ejercicio*/
+    width: 90%;
+    height: 100px;
+    border: 1px solid lightcoral;
+    margin: 20px;
+    /* display: flex; /* flex ayuda a acomodar horizontalmente y más facil los elementos*/
+    /* justify-content: space-between; /* distribuye los items flex según la regla que se le ponga*/
+}
+
+.square {
+    width: 200px;
+    height: 100px;
+    border: 1px solid lightseagreen;
+}
+
+.square.coral {
+    background: lightcoral;
+}
+
+.square.gray {
+    background: gray;
+}
+
+.square.lightblue {
+    background:lightblue;
+}
+
+.square.lightgreen {
+    background: lightgreen;
+}
+
+
+/* CLASES POR UTILIDADES */
+.d-flex{
+    display: flex;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+/* CLASES POR COMPONENTES */
+
+.data-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* una clase anidada en otra clase y sucesivamente*/
+.data-form .input-group {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data-form .input-group label {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.data-form .input-group input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 30px;
+    border: 1px solid purple;
+}
+
+.data-form button {
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
